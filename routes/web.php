@@ -27,6 +27,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function(){
     Route::get('profile/create', 'Admin\ProfileController@add');
     Route::post('profile/create', 'Admin\ProfileController@create');
+    //現在はindex.blade.phpをまだ作成していないため、表示されません
+    Route::get('news', 'Admin\ProfileController@index');
     Route::get('profile/edit', 'Admin\ProfileController@edit');
     Route::post('profile/edit', 'Admin\ProfileController@update');
 });

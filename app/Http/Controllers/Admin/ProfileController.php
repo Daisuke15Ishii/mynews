@@ -40,7 +40,8 @@ class ProfileController extends Controller
         } else {
             $posts = Profiles::all();
         }
-        return view('admin.profile.index',['posts' =>$posts, 'cond_name' => $cond_name]);
+        //indexページを作成していないので、とりあえずeditに飛ばす
+        return view('admin.profile.edit',['posts' =>$posts, 'cond_name' => $cond_name]);
     }
 
 

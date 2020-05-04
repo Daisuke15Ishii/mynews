@@ -1,4 +1,5 @@
 @extends('layouts.front')
+@section('title', 'ニュースの一覧')
 
 @section('content')
     <div class="container">

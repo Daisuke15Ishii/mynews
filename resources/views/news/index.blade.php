@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('title', 'ニュースの一覧')
-
+<p>Laravelの課題により、コメントを追記(デプロイ2回目)</p>
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
